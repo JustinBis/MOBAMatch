@@ -3,14 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>MOBA Match - Find a pub party easier!</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="An easier way to find a party for pub matches.">
     <meta name="author" content="Justin Bisignano">
 
     <!-- CDN styles -->
-    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
-	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 
     <!-- Local styles -->
     <link rel="stylesheet" href="css/styles.css">
@@ -24,12 +23,30 @@
 
   <body>
   
-    <header>
-    	<p>Hey there. How you doin'?</p>
-    </header>
+    <!-- Nav bar fixed to the top of the page -->
+     <div id="nav">
+        <div class="container">
+            <div class="login">
+                <img src="http://steamcommunity-a.akamaihd.net/public/images/signinthroughsteam/sits_small.png" />
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Main content -->
+    <div id="splash" class="jumbotron">
+        <div class="container">
+            <h1>Matchmaking Made Easy</h1>
+            <p>Just select your game, give us some details, and you'll be matched with others who need you in their party</p>
+            <div class="gameButtons">
+                <div id="dota2button" class="btn"></div>
+            </div>
+        </div>
+    </div>
 
     <!-- Hosted CDN scripts -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
     <!-- Local Javascript -->
     <!-- script src="js/init.js"></script -->

@@ -1,0 +1,38 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+
+#nav{
+	position: fixed;
+	padding: 10px;
+	/*background: rgba(239, 242, 246, 0.8);*/
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+.login{
+	float: right;
+	margin: 5px 0;
+	text-align: center;
+}
+
+#splash{
+	text-align: center;
+}
+
+.gameButtons{
+	margin: 40px 10px 10px;
+}
+
+.gameButtons>.btn:hover{
+	outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 18px #9ecaed;
+}
+
+#dota2button{
+	width: 200px;
+	height: 50px;
+	background-image: url("../img/dota2button.jpeg");
+}
