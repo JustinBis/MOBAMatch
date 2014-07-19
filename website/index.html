@@ -48,11 +48,148 @@
 
 
     <!-- Player details area -->
-    <div id="playerinfo" class="container">
+    <div id="details" class="container">
+        <h2 class="text-center">Tell us about how you want to play</h2>
 
+        <form id="playerInfo" role="form">
+
+            <div class="row">
+                <div class="col-md-8 form-group">
+                    <label for="steamName">Steam Name or URL</label>
+                    <input type="text" class="form-control" id="steamName" placeholder="Enter Steam Name or URL">
+                </div>
+                <div class="col-md-4 form-group">
+                    <label>
+                        Remember this info?
+                    </label>
+                    <div>
+                        <input type="checkbox" id="rememberMe" value="rememberMe">
+                        Yes!
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="row">
+
+            <!-- Skill Level -->
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="skillLevel">What's your skill level?</label>
+                    <small>Be honest</small>
+                    <div class="radio">
+                        <label>
+                        <input type="radio" name="skillLevel" id="skillLevel1" value="1">
+                            1 - What's a MOBA?
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                        <input type="radio" name="skillLevel" id="skillLevel2" value="2">
+                            2 - Not a total idiot
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                        <input type="radio" name="skillLevel" id="skillLevel3" value="3">
+                            3 - Pretty good at this
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                        <input type="radio" name="skillLevel" id="skillLevel4" value="4">
+                            4 - Competitve
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                        <input type="radio" name="skillLevel" id="skillLevel5" value="5">
+                            5 - Total Pro
+                        </label>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Player Type -->
+            <div class="col-md-4">
+                <div class="form-group">
+                <label for="skillLevel">What do you want to play as?</label>
+                <small>Hint: pick more than one</small>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" id="playerType1" value="1">
+                            Type 1
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" id="playerType2" value="2">
+                            Type 2
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" id="playerType3" value="3">
+                            Jungler
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" id="playerType4" value="4">
+                            Support
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" id="playerType5" value="5">
+                            Type 5
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Filters -->
+            <div class="col-md-4">
+                <div class="form-group">
+                <label for="filters">Any filter preferences?</label>
+                <small>No guarentees though</small>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" id="justForFun" value="justForFun">
+                            Just playing for fun
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" id="voiceChat" value="voiceChat">
+                            Prefer voice chat
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" id="avoidNoobs" value="avoidNoobs">
+                            Avoid noobs
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- End row -->
+            </div>
+
+            <div class="row text-center">
+                <button type="submit" class="btn btn-lg btn-primary">Find me a party!
+                </button>
+            </div>
+        </form>
     </div>
 
-
+    <hr>
+    <footer class="container">
+        <a href="http://steampowered.com/" class="small pull-right">Powered by Steam</a>
+        <p>&copy; Justin Bisignano 2014</p>
+    </footer>
     <!-- Hosted CDN scripts -->
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
