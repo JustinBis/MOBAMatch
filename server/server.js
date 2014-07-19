@@ -12,7 +12,6 @@
  */
 var
 	express = require('express'),
-	routes = require('./routes'),
 	app = express(),
 
 	// Are we looking for debug output? Run as 'node server.js debug'
@@ -25,12 +24,11 @@ var
 console.log('Configuring App...');
 if (debug) app.use(express.logger('dev'));
 
-// Use the router for custom defined routes 
-app.use(app.router);
-app.use(routes);
+// Use the api router
+app.use('/api', require('./routes/api').api);
 
 // Serve the static website from one directory up
-app.use(express.static('../website' ));
+app.use(express.static(__dirname + '/../website'));
 
 // Handle 404 errors gracefully
 app.use(function(req, res){
@@ -47,7 +45,7 @@ app.use(function(err, req, res, next){
 /*
  * Start the app
  */
- 
+
 // Bind the express app to a port, with 80 as the default
 app.listen(process.env.PORT || 80);
 console.log('App bound to port', process.env.PORT || 80);
