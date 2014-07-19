@@ -1,0 +1,15 @@
+{
+  "name": "mobamatch",
+  "version": "0.0.1",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/JustinBis/MOBAMatch.git"
+  },
+  "dependencies": {
+    "express": "4.6.x",
+  },
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.3.x"
+  }
+}
