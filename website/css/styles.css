@@ -31,6 +31,7 @@ body{
 	height: 50px;
 }
 
+/* Used to show the "coming soon" text under games */
 .gameButtons>span{
 	display: inline-block;
 	color: #111;

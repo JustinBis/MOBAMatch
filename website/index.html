@@ -22,17 +22,6 @@
   </head>
 
   <body>
-  
-    <!-- Nav bar fixed to the top of the page -->
-     <div id="nav">
-        <div class="container">
-            <div class="login">
-                <img src="http://steamcommunity-a.akamaihd.net/public/images/signinthroughsteam/sits_small.png" />
-            </div>
-        </div>
-    </div>
-
-
     <!-- Jumbotron splash area -->
     <div id="splash" class="jumbotron">
         <div class="container">
@@ -54,7 +43,7 @@
     <div id="details" class="container">
         <h2 class="text-center">Tell us about how you want to play</h2>
 
-        <form id="playerInfo" role="form">
+        <form id="playerInfo" role="form" action="/lobby" method="GET">
 
             <div class="row">
                 <div class="col-md-8 form-group">
@@ -65,9 +54,11 @@
                     <label>
                         Remember this info?
                     </label>
-                    <div>
-                        <input type="checkbox" id="rememberMe" value="rememberMe">
-                        Yes!
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" id="rememberMe" value="rememberMe">
+                            Yes!
+                        </label>
                     </div>
                 </div>
             </div>
@@ -111,6 +102,12 @@
                             5 - Total Pro
                         </label>
                     </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" id="avoidNoobs" value="avoidNoobs">
+                            Avoid noobs
+                        </label>
+                    </div>
                 </div>
             </div>
     
@@ -121,31 +118,31 @@
                 <small>Hint: pick more than one</small>
                     <div class="checkbox">
                         <label>
-                            <input type="checkbox" id="playerType1" value="1">
+                            <input type="checkbox" id="playerType1" value="playerType1">
                             Mid
                         </label>
                     </div>
                     <div class="checkbox">
                         <label>
-                            <input type="checkbox" id="playerType2" value="2">
+                            <input type="checkbox" id="playerType2" value="playerType2">
                             Carry
                         </label>
                     </div>
                     <div class="checkbox">
                         <label>
-                            <input type="checkbox" id="playerType3" value="3">
+                            <input type="checkbox" id="playerType3" value="playerType3">
                             Top / Offlaner
                         </label>
                     </div>
                     <div class="checkbox">
                         <label>
-                            <input type="checkbox" id="playerType4" value="4">
+                            <input type="checkbox" id="playerType4" value="playerType4">
                             Jungler
                         </label>
                     </div>
                     <div class="checkbox">
                         <label>
-                            <input type="checkbox" id="playerType5" value="5">
+                            <input type="checkbox" id="playerType5" value="playerType5">
                             Support
                         </label>
                     </div>
@@ -156,17 +153,17 @@
             <div class="col-md-4">
                 <div class="form-group">
                 <label for="filters">Any filter preferences?</label>
-                <small>No guarentees though</small>
+                <small>Find your perfect group!</small>
                     <div class="checkbox">
                         <label>
                             <input type="checkbox" id="justForFun" value="justForFun">
-                            Just playing for fun
+                            Just playing for fun (not competitive)
                         </label>
                     </div>
                     <div class="checkbox">
                         <label>
                             <input type="checkbox" id="voiceChat" value="voiceChat">
-                            Prefer voice chat
+                            Prefer people using voice chat
                         </label>
                     </div>
                     <div class="checkbox">
@@ -190,7 +187,6 @@
 
     <hr>
     <footer class="container">
-        <a href="http://steampowered.com/" class="small pull-right">Powered by Steam</a>
         <p>&copy; Justin Bisignano 2014</p>
     </footer>
     <!-- Hosted CDN scripts -->
