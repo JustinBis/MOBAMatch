@@ -31,6 +31,12 @@ body{
 	height: 50px;
 }
 
+.gameButtons>span{
+	display: inline-block;
+	color: #111;
+	margin: 0 210px;
+}
+
 .gameButtons>.btn:hover{
 	outline: none;
     border-color: #9ecaed;
@@ -45,6 +51,6 @@ body{
 	background-image: url("../img/lolbutton.png");
 }
 
-#hearthstonebutton{
-	background-image: url("../img/hearthstonebutton.png");
+#dawngatebutton{
+	background-image: url("../img/dawngatebutton.png");
 }
