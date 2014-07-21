@@ -40,27 +40,33 @@
 
 
     <!-- Player details area -->
-    <div id="details" class="container">
+    <div id="details" class="container form-group">
         <h2 class="text-center">Tell us about how you want to play</h2>
+        <br />
 
-        <form id="playerInfo" role="form" action="/lobby" method="GET">
+        <form id="playerInfo" role="form" action="lobby.html" method="GET">
 
             <div class="row">
+
                 <div class="col-md-8 form-group">
                     <label for="steamName">Steam Name or URL</label>
-                    <input type="text" class="form-control" id="steamName" placeholder="Enter Steam Name or URL">
+                    <small>So your party can easily find you</small>
+                    <input type="text" class="form-control" id="steamName" name="steamName" placeholder="Enter Steam Name or URL" required>
                 </div>
+
                 <div class="col-md-4 form-group">
                     <label>
                         Remember this info?
                     </label>
+                    <small>Who'd want to fill this out twice?</small>
                     <div class="checkbox">
                         <label>
-                            <input type="checkbox" id="rememberMe" value="rememberMe">
+                            <input type="checkbox" id="rememberMe" name="rememberMe" value="true">
                             Yes!
                         </label>
                     </div>
                 </div>
+
             </div>
 
 
@@ -70,44 +76,9 @@
             <!-- Skill Level -->
             <div class="col-md-4">
                 <div class="form-group">
-                    <label for="skillLevel">What's your skill level?</label>
+                    <label for="skillLevel">What's your MMR?</label>
                     <small>Be honest</small>
-                    <div class="radio">
-                        <label>
-                        <input type="radio" name="skillLevel" id="skillLevel1" value="1">
-                            1 - What's a MOBA?
-                        </label>
-                    </div>
-                    <div class="radio">
-                        <label>
-                        <input type="radio" name="skillLevel" id="skillLevel2" value="2">
-                            2 - Not a total idiot
-                        </label>
-                    </div>
-                    <div class="radio">
-                        <label>
-                        <input type="radio" name="skillLevel" id="skillLevel3" value="3">
-                            3 - Pretty good at this
-                        </label>
-                    </div>
-                    <div class="radio">
-                        <label>
-                        <input type="radio" name="skillLevel" id="skillLevel4" value="4">
-                            4 - Competitve
-                        </label>
-                    </div>
-                    <div class="radio">
-                        <label>
-                        <input type="radio" name="skillLevel" id="skillLevel5" value="5">
-                            5 - Total Pro
-                        </label>
-                    </div>
-                    <div class="checkbox">
-                        <label>
-                            <input type="checkbox" id="avoidNoobs" value="avoidNoobs">
-                            Avoid noobs
-                        </label>
-                    </div>
+                     <input type="text" class="form-control" id="skillLevel" name="skillLevel" placeholder="Enter your MMR (e.g. 3500)" required>
                 </div>
             </div>
     
@@ -118,31 +89,31 @@
                 <small>Hint: pick more than one</small>
                     <div class="checkbox">
                         <label>
-                            <input type="checkbox" id="playerType1" value="playerType1">
+                            <input type="checkbox" id="playerType1" name="playerType1" value="playerType1">
                             Mid
                         </label>
                     </div>
                     <div class="checkbox">
                         <label>
-                            <input type="checkbox" id="playerType2" value="playerType2">
+                            <input type="checkbox" id="playerType2" name="playerType2" value="playerType2">
                             Carry
                         </label>
                     </div>
                     <div class="checkbox">
                         <label>
-                            <input type="checkbox" id="playerType3" value="playerType3">
+                            <input type="checkbox" id="playerType3" name="playerType3" value="playerType3">
                             Top / Offlaner
                         </label>
                     </div>
                     <div class="checkbox">
                         <label>
-                            <input type="checkbox" id="playerType4" value="playerType4">
+                            <input type="checkbox" id="playerType4" name="playerType4" value="playerType4">
                             Jungler
                         </label>
                     </div>
                     <div class="checkbox">
                         <label>
-                            <input type="checkbox" id="playerType5" value="playerType5">
+                            <input type="checkbox" id="playerType5" name="playerType5" value="playerType5">
                             Support
                         </label>
                     </div>
@@ -156,19 +127,21 @@
                 <small>Find your perfect group!</small>
                     <div class="checkbox">
                         <label>
-                            <input type="checkbox" id="justForFun" value="justForFun">
+                            <input type="checkbox" id="justForFun" name="justForFun" value="true">
                             Just playing for fun (not competitive)
                         </label>
                     </div>
                     <div class="checkbox">
                         <label>
-                            <input type="checkbox" id="voiceChat" value="voiceChat">
+                            <input type="checkbox" id="voiceChat" name="voiceChat" value="true">
                             Prefer people using voice chat
+                            <br />
+                            <small>(AKA I have a mic and like to use it)</small>
                         </label>
                     </div>
                     <div class="checkbox">
                         <label>
-                            <input type="checkbox" id="avoidNoobs" value="avoidNoobs">
+                            <input type="checkbox" id="avoidNoobs" name="avoidNoobs" value="true">
                             Avoid noobs
                         </label>
                     </div>

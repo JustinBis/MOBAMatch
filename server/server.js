@@ -12,6 +12,7 @@
  */
 var
 	express = require('express'),
+	morgan = require('morgan'), // express logger
 	app = express(),
 
 	// Are we looking for debug output? Run as 'node server.js debug'
@@ -22,7 +23,7 @@ var
  * App configuration
  */
 console.log('Configuring App...');
-if (debug) app.use(express.logger('dev'));
+if (debug) app.use(morgan('dev'));
 
 // Use the api router
 app.use('/api', require('./routes/api').api);

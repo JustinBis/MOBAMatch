@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>MOBA Match Lobby</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Lobby page, trying to find a party that matches your preferences.">
+    <meta name="author" content="Justin Bisignano">
+
+    <!-- CDN styles -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- Local styles -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- HTML5 shiv, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="js/lib/html5shiv.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body>
+    <!-- Pulldown options pane (hidden by default) -->
+    <div class="container">
+        <div id="optionsPane" class="row">
+            <div class="form-group">
+
+            </div>
+            <div class="text-center">
+                <span>Options (change my search filters)<span id="optionsPulldownIcon" class="glyphicon glyphicon-chevron-down"></span></span>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Noscript saftey, for people who turned off JS -->
+    <noscript class="container">
+        <div class="row">
+            <h1 class="text-center"> Sorry, but you'll need to enable JavaScript or update to a newer browser for this all to work.</h1>
+        </div>
+    </noscript>
+
+
+    <!-- Lobby -->
+    <div id="details" class="container form-group">
+        <div class="row">
+            <h3 class="text-center">Welcome to the Lobby</h3>
+            <br />
+            <h5 class="text-center">Finding other players...</h5>
+        </div>
+    </div>
+
+    <hr>
+    <footer class="container">
+        <p>&copy; Justin Bisignano 2014</p>
+    </footer>
+    <!-- Hosted CDN scripts -->
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <!-- Local Javascript -->
+    <script src="js/lobby.js"></script>
+
+    <!-- Google Analytics -->
+
+  </body>
+</html>

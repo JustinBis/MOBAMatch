@@ -55,3 +55,13 @@ body{
 #dawngatebutton{
 	background-image: url("../img/dawngatebutton.png");
 }
+
+/* 
+ * The pull down options pane for the lobby
+ * hidden by default with only the pulldown showing
+ */
+#optionsPane{
+	background: rgba(239, 242, 246, 0.8);
+	padding: 10px 0;
+	margin-top: -20px;
+}
