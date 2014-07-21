@@ -6,7 +6,8 @@
     "url" : "https://github.com/JustinBis/MOBAMatch.git"
   },
   "dependencies": {
-    "express": "4.6.x"
+    "express": "4.6.x",
+    "morgan": "1.2.x"
   },
   "engines": {
     "node": "0.10.x",
