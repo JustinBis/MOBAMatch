@@ -63,7 +63,7 @@ body{
 #optionsPane{
 	background: rgba(239, 242, 246, 0.8);
 	padding: 10px 0;
-	transition margin-top 1s linear;
+	transition: margin-top 0.1s linear;
 }
 
 .optionsUp{
@@ -71,7 +71,7 @@ body{
 }
 
 .optionsDown{
-	margin-top: 10px;
+	margin-top: 0px;
 }
 
 #optionsButton:hover #optionsPulldownIcon{
