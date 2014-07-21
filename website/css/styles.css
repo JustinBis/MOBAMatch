@@ -63,5 +63,17 @@ body{
 #optionsPane{
 	background: rgba(239, 242, 246, 0.8);
 	padding: 10px 0;
+	transition margin-top 1s linear;
+}
+
+.optionsUp{
 	margin-top: -20px;
+}
+
+.optionsDown{
+	margin-top: 10px;
+}
+
+#optionsButton:hover #optionsPulldownIcon{
+	color: #0125DF;
 }
