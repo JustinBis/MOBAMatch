@@ -22,19 +22,6 @@
   </head>
 
   <body>
-    <!-- Pulldown options pane (hidden by default) -->
-    <div class="container">
-        <div id="optionsPane" class="row optionsDown">
-            <div class="form-group">
-
-            </div>
-            <div id="optionsButton" class="row text-center">
-                <span>Options (change my search filters) <span id="optionsPulldownIcon" class="glyphicon glyphicon-chevron-down"></span></span>
-            </div>
-        </div>
-    </div>
-
-
     <!-- Noscript saftey, for people who turned off JS -->
     <noscript class="container">
         <div class="row">
@@ -42,13 +29,138 @@
         </div>
     </noscript>
 
-
     <!-- Lobby -->
-    <div id="details" class="container form-group">
+
+    <!-- Jumbotron Main Area -->
+    <div class="jumbotron fix-jumbotron">
         <div class="row">
-            <h3 class="text-center">Welcome to the Lobby</h3>
-            <br />
-            <h5 class="text-center">Finding other players...</h5>
+            <!-- Current Party Div -->
+            <div class="col-md-6">
+                <h3 class="text-center">
+                    Current Party
+                </h3>
+
+                <div class="party-large">
+                    <h4 id="playerCount" class="text-center">
+                        1 / 5
+                    </h4>
+
+                    <table class="table table-striped table-condensed">
+                        <tr>
+                            <th>Name</th>
+                            <th>MMR</th>
+                            <th>Player Type</th>
+                            <th>Voice Chat</th>
+                        </tr>
+
+                        <tr>
+                            <td>Test Name</td>
+                            <td>1000</td>
+                            <td>Tester</td>
+                            <td><span class="glyphicon glyphicon-volume-up"></span></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- Chat Area -->
+                <h4 class="text-center">
+                    Chat
+                </h4>
+                <div id="chatBox">
+                    <b>Chat Bot:</b> This is the chat for your current party! Don't be shy, use it!
+                </div>
+                <div id="chatInput" class="form-group">
+                    <input type="text" class="form-control" placeholder="Type to chat!">
+                    </input>
+                </div>
+
+            </div>
+
+            <!-- Player Info Div -->
+            <div class="col-md-6">
+                <h3 class="text-center">
+                    Player Info
+                </h3>
+
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-1 form-group">
+                        <label for="name">Steam Name or URL</label>
+                        <input type="text" class="form-control" id="name" name="name">
+                    </div>
+                    <div class="col-md-3 form-group">
+                        <label for="skillLevel">MMR</label>
+                        <input type="text" class="form-control" id="skillLevel" name="skillLevel">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-1 form-group">
+                        <label for="filters">Filter preferences</label>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" id="justForFun" name="justForFun" value="true">
+                                Just playing for fun (not competitive)
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" id="voiceChat" name="voiceChat" value="true">
+                                Prefer people using voice chat
+                                <br />
+                                <small>(AKA I have a mic and like to use it)</small>
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" id="avoidNoobs" name="avoidNoobs" value="true">
+                                Avoid noobs
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-4 form-group">
+                        <label for="playerType">Player Types</label>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" id="playerType1">
+                                Mid
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" id="playerType2">
+                                Carry
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" id="playerType3">
+                                Top / Offlaner
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" id="playerType4">
+                                Jungler
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" id="playerType5">
+                                Support
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Make my own party button -->
+                <div class="row text-center">
+                    <button id="newParty" class="btn btn-lg btn-primary" title="With blackjack, and hookers!">
+                        Make my own new party!
+                    </button>
+                </div>
+            
+            </div> <!-- End Player Info Div -->
+
         </div>
     </div>
 
